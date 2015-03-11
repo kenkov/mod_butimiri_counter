@@ -7,7 +7,7 @@ mod_butimiri_counter
 使い方
 ======
 
-::
+.. code-block:: python
 
     from mod_butimiri_counter import ModButimiriCounter
     m_butimiri_counter = ModButimiriCounter()
