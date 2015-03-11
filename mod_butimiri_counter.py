@@ -8,7 +8,7 @@ from collections import defaultdict
 import numpy
 
 
-class ModBurimiti(Mod):
+class ModButimiriCounter(Mod):
     def __init__(
         self,
         logger=None,
