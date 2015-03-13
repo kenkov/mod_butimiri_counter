@@ -23,7 +23,7 @@ class ModButimiriCounter(Mod):
         self.last_update = datetime.now()
         self.log = defaultdict(list)
 
-    def is_fire(self, message, master) -> bool:
+    def is_utterance_needed(self, message, master) -> bool:
         now = datetime.now()
         if (now - self.last_update).days >= 1:
             self.log = defaultdict(list)
@@ -39,7 +39,7 @@ class ModButimiriCounter(Mod):
 
         return flag
 
-    def reses(self, message, master):
+    def utter(self, message, master):
         screen_name = message["user"]["screen_name"]
         name = message["user"]["name"]
         log = self.log[screen_name]
