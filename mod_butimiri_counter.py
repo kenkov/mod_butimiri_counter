@@ -23,7 +23,7 @@ class ModButimiriCounter(Mod):
         self.last_update = datetime.now()
         self.log = defaultdict(list)
 
-    def is_utterance_needed(self, message, master) -> bool:
+    def can_utter(self, message, master) -> bool:
         now = datetime.now()
         if (now - self.last_update).days >= 1:
             self.log = defaultdict(list)
